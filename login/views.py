@@ -50,7 +50,7 @@ def add(request):
         return HttpResponse(json.dumps({'errCode' : -3}), content_type = "application/json")
     if count == -4 :
         return HttpResponse(json.dumps({'errCode' : -4}), content_type = "application/json")
-    return HttpResponse(json.dumps({'errCode' : 1, "count" : count}), content_type = "application/json")
+    return HttpResponse(json.dumps({'errCode' : 1, 'count' : count}), content_type = "application/json")
 
 @csrf_exempt
 def resetFixture(request):
