@@ -14,7 +14,7 @@ class Users(models.Model):
     count = models.IntegerField()
 
     def login(self, userid, passw):
-        if not (Users.objects.filter(username=userid).exists()):
+        if (Users.objects.filter(username=userid).count()==0):
             return ERR_BAD_CREDENTIALS
         else:
             info = Users.objects.get(username = userid)
@@ -30,7 +30,7 @@ class Users(models.Model):
             return ERR_BAD_USERNAME
         if len(passw) > 128:
             return ERR_BAD_PASSWORD
-        if (Users.objects.filter(username = userid).exists()):
+        if (Users.objects.filter(username = userid).count()==1):
             return ERR_USER_EXISTS
         info = Users.objects.create(username = userid, password = passw, count = 1)
         return SUCCESS
