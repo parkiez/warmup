@@ -134,7 +134,7 @@ DATABASES['default'] =  dj_database_url.config(default='postgres://vrjdskopijafa
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
 # Allow all host headers
-ALLOWED_HOSTS = ['*']
+#ALLOWED_HOSTS = ['*']
 
 STATIC_ROOT = 'staticfiles'
 STATIC_URL = '/static/'

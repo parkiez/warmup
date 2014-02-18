@@ -2,18 +2,44 @@
 
 
 .box {
-    width: 300px;
-    height: 200px;
-    border: thin black solid;
-    background-color: rgb(243,243,243);
+    margin: 150px 20px 10px 20px;
+    width: 400px;
+    height: 300px;
+    border:2px solid;
+    border-radius:25px;
+    color:#ffffff;
+    background-color: rgb(51,52,59);
+    box-shadow: 10px 10px 5px #888888;
 }
 
+input[type="text"] {
+border: 2px solid #000000;
+background-color: #ffffff;
+color:#32829D;
+}
+
+input[type="password"] {
+
+border: 2px solid #000000;
+background: #ffffff;
+color:#32829D;
+}
+
+input[type="submit"] {
+    width: 80px;
+    height: 50px;
+border: none;
+background: transparent;
+color:#FFFFFF;
+}
+
+
 .message {
-    margin: 10px 20px 10px 20px;
-    border: thin black solid;
+    margin: 40px 20px 10px 20px;
+    color:#FFFFFF;
+    
 }
 
 body {
-	font-family: 'Helvetica Neue Light', HelveticaNeue-Light, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	background-color: #323941;
 }
-
